@@ -131,7 +131,7 @@ body {
 
     .card-text {
         width: 350px;
-        justify-content: space-between;
+        justify-content: space-evenly;
         height: 100%;
     }
 
@@ -141,5 +141,9 @@ body {
         border-top-left-radius: 1rem;
         border-bottom-left-radius: 1rem;
         border-bottom-right-radius: 0rem;   
+    }
+
+    .category {
+        margin-top: 2rem;
     }
 }
