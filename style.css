@@ -6,7 +6,7 @@
     padding: 0px;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,10 +27,20 @@ body{
     max-width: 350px;
 }
 
+.card-image {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+}
+
 .title {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     margin: 0.75rem;
     margin-top: 0;
     margin-left: 1.5rem;
@@ -69,7 +79,7 @@ body{
 }
 
 .price {
-    color: #3D8168;
+    color: hsl(228, 12%, 48%);
     font-family: sans-serif;
 }
 
@@ -97,5 +107,39 @@ body{
     width: 100%;
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
-    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 375px) {
+.card {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        background-color: white;
+        border-radius: 1rem;
+        max-width: 700px;
+        height: 525px;
+        position: relative;
+}
+
+    .card-image {
+        justify-content: space-between;
+        width: 350px;
+        height: 100%;
+
+    }
+
+    .card-text {
+        width: 350px;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .photo {
+        content: url("./images/image-product-desktop.jpg");
+        border-top-right-radius: 0rem;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 0rem;   
+    }
 }
